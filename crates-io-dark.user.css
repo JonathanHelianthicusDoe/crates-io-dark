@@ -6,6 +6,7 @@
 @license        CC-BY-SA-4.0
 @author         Dr. Jonathan Helianthicus Doe, IV
 @homepageURL    https://github.com/JonathanHelianthicusDoe/crates-io-dark
+@updateURL      https://github.com/JonathanHelianthicusDoe/crates-io-dark/raw/master/crates-io-dark.user.css
 ==/UserStyle== */
 @-moz-document domain("crates.io") {
     html {
