@@ -11,7 +11,6 @@
 @-moz-document domain("crates.io") {
     html {
         background-color: #222;
-        font-family: monospace;
     }
 
     #header input.search,
