@@ -1,0 +1,167 @@
+/* ==UserStyle==
+@name           crates-io-dark
+@namespace      JonathanHelianthicusDoe
+@version        0.1.0
+@description    Dark theme for crates.io
+@license        CC-BY-SA-4.0
+@author         Dr. Jonathan Helianthicus Doe, IV
+@homepageURL    https://github.com/JonathanHelianthicusDoe/crates-io-dark
+==/UserStyle== */
+@-moz-document domain("crates.io") {
+    html {
+        background-color: #222;
+        font-family: monospace;
+    }
+
+    #header input.search,
+    #mobile-search input.search {
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
+    #main {
+        box-shadow: none;
+        border: none;
+        background-color: #111;
+        color: #eee;
+    }
+
+    .crate-lists li a {
+        background-color: #222 !important;
+        color: #eee !important;
+    }
+
+    .arrow-in-list svg {
+        filter: invert(100%);
+    }
+
+    .yellow-button {
+        background: linear-gradient(to bottom, #333 0, #222 100%);
+        color: #eee;
+    }
+
+    .yellow-button:hover {
+        background: linear-gradient(to bottom, #444 0, #333 100%);
+    }
+
+    .crate-search {
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
+    .crate-search svg {
+        filter: invert(100%);
+    }
+
+    .cur,
+    .total {
+        color: #fff !important;
+    }
+
+    #results a.dropdown {
+        background-color: #222 !important;
+        color: #eee !important;
+    }
+
+    .dropdown-container svg {
+        filter: invert(100%);
+    }
+
+    span.small {
+        color: #bbb !important;
+    }
+
+    ul.dropdown {
+        border: 1px solid #666;
+        background-color: #222;
+        color: #eee !important;
+    }
+
+    ul.dropdown li a {
+        color: #eee !important
+    }
+
+    #crates {
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
+    #crates svg {
+        filter: invert(100%);
+    }
+
+    .crate-toml-copy button {
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
+    .crate .info a {
+        color: #fff !important;
+    }
+
+    .crate .stats {
+        color: #bbb;
+    }
+
+    .pagination svg {
+        filter: invert(100%);
+    }
+
+    .pagination svg:hover {
+        filter: invert(100%)
+                drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.1875));
+    }
+
+    .pagination a {
+        background-color: #111 !important;
+    }
+
+    .pagination a:hover {
+        font-weight: bolder;
+    }
+
+    .fork-me {
+        display: none;
+    }
+
+    .sep {
+        color: #666 !important;
+    }
+
+    #crates > div {
+        border-bottom: 0.25rem solid #666;
+    }
+
+    .crate-info .crate-readme p code {
+        background-color: #222;
+        border-radius: 4px;
+    }
+
+    .crate-info .install {
+        background-color: #222 !important;
+        color: #eee !important;
+    }
+
+    .crate-info .install svg {
+        filter: invert(100%);
+    }
+
+    #crates-heading {
+        background-color: #222;
+    }
+
+    #crate-links,
+    #me-profile,
+    #title-header,
+    .crate-info {
+        border-bottom: 0.25rem solid #666;
+    }
+
+    #blurb #stats {
+        border-left: 1px solid #666;
+    }
+
+    nav svg {
+        filter: invert(100%);
+    }
+}
