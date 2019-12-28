@@ -30,9 +30,12 @@
         background-color: #222 !important;
         color: #eee !important;
     }
+    .crate-lists li a:hover {
+        background-color: #333 !important;
+    }
 
     .arrow-in-list svg {
-        filter: invert(100%);
+        background: #111;
     }
 
     .yellow-button {
@@ -41,7 +44,7 @@
     }
 
     .yellow-button:hover {
-        background: linear-gradient(to bottom, #444 0, #333 100%);
+        background: linear-gradient(to bottom, #282828 0, #171717 100%);
     }
 
     .crate-search {
@@ -63,10 +66,6 @@
         color: #eee !important;
     }
 
-    .dropdown-container svg {
-        filter: invert(100%);
-    }
-
     span.small {
         color: #bbb !important;
     }
@@ -81,12 +80,14 @@
         color: #eee !important
     }
 
-    #crates {
+    #crates,
+    .white-rows {
         background-color: #111 !important;
         color: #eee !important;
     }
 
-    #crates svg {
+    #crates svg,
+    .white-rows svg {
         filter: invert(100%);
     }
 
@@ -162,6 +163,14 @@
     }
 
     nav svg {
+        filter: invert(100%);
+    }
+
+    .graph-data {
+        color: #eee;
+    }
+
+    .graph-data svg {
         filter: invert(100%);
     }
 }
