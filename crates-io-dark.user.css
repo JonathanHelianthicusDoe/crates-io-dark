@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           crates-io-dark
 @namespace      JonathanHelianthicusDoe
-@version        0.2.0
+@version        0.2.1
 @description    Dark theme for crates.io
 @license        CC-BY-SA-4.0
 @author         Dr. Jonathan Helianthicus Doe, IV
@@ -17,6 +17,12 @@
     #mobile-search input.search {
         background-color: #111 !important;
         color: #eee !important;
+    }
+
+    #p404 input {
+        background-color: #222 !important;
+        color: #eee !important;
+        border-color: #666;
     }
 
     #main {
@@ -182,5 +188,9 @@
     #tokens,
     #tokens .create-token {
         background-color: inherit;
+    }
+
+    #flash {
+        background-color: #664545;
     }
 }
