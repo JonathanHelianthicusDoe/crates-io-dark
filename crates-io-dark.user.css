@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           crates-io-dark
 @namespace      JonathanHelianthicusDoe
-@version        0.2.2
+@version        0.3.0
 @description    Dark theme for crates.io
 @license        CC-BY-SA-4.0
 @author         Dr. Jonathan Helianthicus Doe, IV
@@ -193,5 +193,9 @@
 
     #flash {
         background-color: #664545;
+    }
+
+    #selection {
+        background-color: #222;
     }
 }
