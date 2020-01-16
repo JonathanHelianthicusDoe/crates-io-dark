@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           crates-io-dark
 @namespace      JonathanHelianthicusDoe
-@version        0.2.1
+@version        0.2.2
 @description    Dark theme for crates.io
 @license        CC-BY-SA-4.0
 @author         Dr. Jonathan Helianthicus Doe, IV
@@ -19,7 +19,8 @@
         color: #eee !important;
     }
 
-    #p404 input {
+    #p404 input,
+    .p404 input {
         background-color: #222 !important;
         color: #eee !important;
         border-color: #666;
