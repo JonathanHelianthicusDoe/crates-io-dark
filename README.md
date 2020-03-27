@@ -2,6 +2,13 @@
 
 A smol dark theme for [crates.io](https://crates.io/).
 
+## Important Note
+
+**NOTE:** crates.io now mangles class/id names, which unfortunately sort of
+thwarts the ability to apply a usercss. Until [my PR to the crates.io
+repo](https://github.com/rust-lang/crates.io/pull/2076) gets merged, I will try
+to keep this usercss working but I cannot give any guarantees.
+
 ## Install
 
 Install [Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) and then

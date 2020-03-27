@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           crates-io-dark
 @namespace      JonathanHelianthicusDoe
-@version        0.3.1
+@version        0.4.0
 @description    Dark theme for crates.io
 @license        CC-BY-SA-4.0
 @author         Dr. Jonathan Helianthicus Doe, IV
@@ -19,6 +19,12 @@
         color: #eee !important;
     }
 
+    input[class^='_search_'],
+    input[class*=' _search_'] {
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
     #p404 input,
     .p404 input {
         background-color: #222 !important;
@@ -26,11 +32,30 @@
         border-color: #666;
     }
 
-    #main {
-        box-shadow: none;
-        border: none;
-        background-color: #111;
-        color: #eee;
+    main {
+        box-shadow: none !important;
+        border: none !important;
+        background-color: #111 !important;
+        color: #eee !important;
+    }
+
+    div[class^='_title-header'],
+    div[class*=' _title-header'] {
+        border-bottom: 5px solid #666 !important;
+    }
+
+    div[class^='_stats_'],
+    div[class*=' _stats_'],
+    div[class^='_stat_'],
+    div[class*=' _stat_'] {
+        border-left: 1px solid #666 !important;
+    }
+
+    div[class^='_crate-downloads_'] div[class^='_stats_'],
+    div[class^='_crate-downloads_'] div[class*=' _stats_'],
+    div[class*=' _crate-downloads_'] div[class^='_stats_'],
+    div[class*=' _crate-downloads_'] div[class*=' _stats_'] {
+        border-left: none !important;
     }
 
     .crate-lists li a {
@@ -73,6 +98,11 @@
         color: #eee !important;
     }
 
+    #results .dropdown-button {
+        background-color: #222 !important;
+        color: #eee !important;
+    }
+
     span.small {
         color: #bbb !important;
     }
@@ -93,13 +123,20 @@
         color: #eee !important;
     }
 
+    .white-rows .row {
+        border-bottom: 2px solid #666;
+    }
+
     #crates svg,
     .white-rows svg {
         filter: invert(100%);
     }
 
-    .crate-toml-copy button {
-        background-color: #111 !important;
+    div[class^='_crate-toml-copy_'] button,
+    div[class*=' _crate-toml-copy_'] button,
+    div[class^='_crate-toml-copy_'] button:active,
+    div[class*=' _crate-toml-copy_'] button:active {
+        background-color: inherit !important;
         color: #eee !important;
     }
 
@@ -128,6 +165,37 @@
         font-weight: bolder;
     }
 
+    nav[class^='_pagination_'] a,
+    nav[class*=' _pagination_'] a {
+        background-color: inherit !important;
+        color: #bbb !important;
+    }
+
+    nav[class^='_pagination_'] a.active,
+    nav[class*=' _pagination_'] a.active,
+    nav[class^='_pagination_'] a:hover,
+    nav[class*=' _pagination_'] a:hover {
+        font-weight: bolder;
+        background-color: inherit !important;
+    }
+
+    nav[class^='_pagination_'] a.active,
+    nav[class*=' _pagination_'] a.active {
+        text-shadow: #eee 1px 0 10px;
+    }
+
+    nav[class^='_pagination_'] a:hover,
+    nav[class*=' _pagination_'] a:hover {
+        color: #007940 !important;
+    }
+
+    nav[class^='_pagination_'] svg:hover,
+    nav[class*=' _pagination_'] svg:hover,
+    nav[class^='_pagination_'] img:hover,
+    nav[class*=' _pagination_'] img:hover {
+        filter: invert(100%) drop-shadow(0 0 5px #eee);
+    }
+
     .fork-me {
         display: none;
     }
@@ -140,7 +208,8 @@
         border-bottom: 0.25rem solid #666;
     }
 
-    .crate-info .crate-readme p code {
+    section[class^='_crate-readme_'] p code,
+    section[class*=' _crate-readme_'] p code {
         background-color: #222;
         border-radius: 4px;
     }
@@ -154,8 +223,27 @@
         filter: invert(100%);
     }
 
-    #crates-heading {
+    div[class^='_install_'],
+    div[class*=' _install_'] {
+        background-color: #222 !important;
+    }
+
+    div[class^='_install_'] code,
+    div[class*=' _install_'] code {
+        background-color: #111 !important;
+    }
+
+    div[class^='_install_'] svg,
+    div[class*=' _install_'] svg {
+        filter: invert(100%);
+    }
+
+    .crates-heading {
         background-color: #222;
+    }
+
+    .crates-heading svg {
+        filter: invert(100%);
     }
 
     #crate-links,
@@ -175,11 +263,13 @@
         filter: invert(100%);
     }
 
-    .graph-data {
-        color: #eee;
+    div[class^='_graph-data'],
+    div[class*=' _graph-data'] {
+        color: #eee !important;
     }
 
-    .graph-data svg {
+    div[class^='_graph-data'] svg,
+    div[class*=' _graph-data'] svg {
         filter: invert(100%);
     }
 
