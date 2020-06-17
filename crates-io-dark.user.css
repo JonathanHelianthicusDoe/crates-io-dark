@@ -18,6 +18,11 @@
         background-color: #111 !important;
         color: #eee !important;
     }
+    
+    div[class^='_header_'],
+    div[class*='_header_'] {
+        background-color: #222 !important;
+    }
 
     input[class^='_search_'],
     input[class*=' _search_'] {
