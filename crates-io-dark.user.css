@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           crates-io-dark
 @namespace      JonathanHelianthicusDoe
-@version        0.4.0
+@version        0.4.1
 @description    Dark theme for crates.io
 @license        CC-BY-SA-4.0
 @author         Dr. Jonathan Helianthicus Doe, IV
@@ -18,9 +18,9 @@
         background-color: #111 !important;
         color: #eee !important;
     }
-    
+
     div[class^='_header_'],
-    div[class*='_header_'] {
+    div[class*=' _header_'] {
         background-color: #222 !important;
     }
 
